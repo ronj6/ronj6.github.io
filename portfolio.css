@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+h1{
+  text-shadow: 1px 1px #4278ff;
+  text-decoration:none;
+}
+
+p{
+text-shadow: 1px 1px #92aff8;
+text-decoration:none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+h1{color:#ffffff;
+    }
+h2{color: #92aff8; 
+    }
+ p{color: #ffffff;}
+p{ font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  transition-duration: 0.4s;
+      opacity: 0.6;
+}
+body {
+min-height: 100vh;
+margin: 0;
+min-height: 100%;
+display: grid;
+grid-template-columns: 20% 1%;
+gap: 1%;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 17%;
+  position: fixed;
+  background-color:#000000;
+  opacity: 0.6;
+}
+
+
+@media (max-width: 600px) {
+ .sidenav{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color:#000000;
+  
+ }
+
+
+}
+
