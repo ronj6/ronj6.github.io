@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-h1{text-align: center; margin-top: 20%;
+h1{text-align: center;
   text-shadow: 1px 1px #4278ff;
 }
 h2{text-align: center; 
@@ -12,19 +12,22 @@ margin-right: 35%;
 margin-top: 0.5cm;
 text-shadow: 1px 1px #92aff8;
 }
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.logo img{
+  width: 4cm;
+  height: 4cm;
+}
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
 h1{color:#ffffff;
     }
 h2{color: #92aff8; 
-text-shadow:1px 1px rgb(118, 121, 121);    
+text-shadow:1px 1px #3e5591;    
 }
- p{color: #ffffff;}
-p{ font-family: "Baskervville", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-shadow: 1px 1px #92aff8;
-  text-decoration: none;
-}
+ 
 a {
   text-decoration: none;
 }
@@ -32,7 +35,10 @@ a:hover{
   transition-duration: 0.4s;
       opacity: 0.6;
 }
-
+.endPart h2{
+ color: #ffffff;
+ text-shadow: 1px 1px #4278ff;
+}
 
 @media (max-width: 600px) {
   

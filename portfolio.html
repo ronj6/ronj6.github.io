@@ -9,59 +9,149 @@
     <script src="https://kit.fontawesome.com/5bfd5d6dfe.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="portfolio.css" rel="stylesheet">
-<style>
-    body{
-      background-image: url(F9010F38-7E11-474A-9930-43A73E6588A9.JPEG);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
+    <link href="portfolio.css" rel="stylesheet">
 
-</style>
+    <style>
+        body {
+            background-image: url(F9010F38-7E11-474A-9930-43A73E6588A9.JPEG);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .hamburger {
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            color: white;
+            z-index: 2;
+            display: none; 
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #000000;
+            opacity: 0.6;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s; 
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav.open {
+            width: 250px;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 600px) {
+            .hamburger {
+                display: block; 
+            }
+
+            .sidenav {
+                width: 0; 
+            }
+
+            .sidenav.open {
+                width: 100%;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleNav() {
+            const sidenav = document.getElementById("mySidenav");
+            sidenav.classList.toggle("open");
+        }
+    </script>
 </head>   
 
 <body>
-  <div class="sidenav">
-    
-      <h2>Tattoo sketches</h2>
-      <a href="#03032024">
-      <div class="Artwork1.1"><p>03032024</p></div>
-      </a>
-      <a href="#10032024">
-        <div class="Artwork1.2"><p>10032024</p></div>
+    <span class="hamburger" onclick="toggleNav()">&#9776;</span>
+
+    <div id="mySidenav" class="sidenav">
+        <h2>Tattoo sketches</h2>
+        <a href="#03032024">
+            <div class="Artwork1.1"><p>03032024</p></div>
         </a>
-      <a href="#19032024">
-        <div class="Artwork1.3"><p>19032024</p></div>
+        <a href="#10032024">
+            <div class="Artwork1.2"><p>10032024</p></div>
         </a>
-      <h2>More abstract</h2>
-      <a href="#28-29042024">
-        <div class="Artwork2.1"><p>28-29042024</p></div>
+        <a href="#19032024">
+            <div class="Artwork1.3"><p>19032024</p></div>
         </a>
-      <h2>Concept sketches</h2>
-      <a href="#04082022">
-        <div class="Artwork3.1"><p>04082022</p></div>
+
+        <h2>More abstract</h2>
+        <a href="#28-29042024">
+            <div class="Artwork2.1"><p>28-29042024</p></div>
+        </a>
+
+        <h2>Concept sketches</h2>
+        <a href="#04082022">
+            <div class="Artwork3.1"><p>04082022</p></div>
         </a>
         <a href="#21072019">
-          <div class="Artwork3.2"><p>21072019</p></div>
-          </a>
-      <a href="Contactinfo.html">
-        <h2>Contact information</h2>
+            <div class="Artwork3.2"><p>21072019</p></div>
         </a>
-  </div>
 
-<div class="main-content">
-<div class="image-grid">
-  <h2>Tattoo sketches</h2>
-  <img src="IMG_0396copy.PNG" alt="Artwork1.1" id="03032024">
-  <img src="IMG_0397copy.PNG" alt="Artwork1.2" id="10032024">
-  <img src="IMG_0398copy.PNG" alt="Artwork1.3" id="19032024">
-<h2>More abstract</h2>
-  <img src="IMG_0402copy.PNG" alt="Artwork2.1" id="28-29042024">
-<h2>Concept sketches</h2>
-  <img src="04082022.JPEG" alt="Artwork3.1" id="04082022">
-  <img src="21072019.JPEG" alt="Artwork3.2" id="21072019">
-</div>
-</div>
+        <a href="Contactinfo.html">
+            <h2>Contact information</h2>
+        </a>
+        <a href="index.html">
+          <h2>Back to the beginning</h2>
+        </a>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="main-content">
+        <div class="image-grid">
+            <h2>Tattoo sketches</h2>
+            <img src="IMG_0396copy.PNG" alt="Artwork1.1" id="03032024">
+            <img src="IMG_0397copy.PNG" alt="Artwork1.2" id="10032024">
+            <img src="IMG_0398copy.PNG" alt="Artwork1.3" id="19032024">
+
+            <div id="moreAbstract" class="More-Abstract">
+            <h2>More abstract</h2>
+            <img src="IMG_0402copy.PNG" alt="Artwork2.1" id="28-29042024">
+            </div>    
+
+            <div id="conceptSketches" class="Concept-Sketches">
+            <h2>Concept sketches</h2>
+            <img src="04082022.JPEG" alt="Artwork3.1" id="04082022">
+            <img src="21072019.JPEG" alt="Artwork3.2" id="21072019">
+          </div>
+        </div>
+    </div>
 
 </body>
+</html>

@@ -1,91 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-h1{text-align: center; margin-top: 20%;
+
+body {
+  background-image: url(F9010F38-7E11-474A-9930-43A73E6588A9.JPEG);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.logo img{
+  width: 4cm;
+  height: 4cm;
+}
+
+h1 {
+  text-align: center;
   text-shadow: 1px 1px #4278ff;
+  color: #ffffff;
 }
-h2{text-align: center; 
+
+h2 {
+  text-align: center;
+  color: #92aff8;
 }
-p{ text-align: center; margin-top: 2%px;
+
+p {
+  text-align: center;
+  margin: 2% 35% 0 35%;
+  color: #ffffff;
+  font-family: "Baskervville", serif;
+  text-shadow: 1px 1px #92aff8;
 }
-p{
-margin-left: 35%;
-margin-right: 35%;
-margin-top: 2%;
-text-shadow: 1px 1px #92aff8;
-}
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-h1{color:#ffffff;
-    }
-h2{color: #92aff8; 
-    }
- p{color: #ffffff;}
-p{ font-family: "Baskervville", serif;
+
+button {
+  font-family: "Baskervville", serif;
   font-weight: 400;
   font-style: normal;
-  
+  background-color: #92aff8;
+  border: #92aff8 1px solid;
+  border-radius: 10px;
+  padding: 1px 15px; 
+  box-shadow: 1px 1px 1px 1px rgb(118, 121, 121);
+  color: white;
+  opacity: 1;
+  transition: 0.3s;
 }
-button{font-family: "Baskervville", serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #92aff8;
-    border: #92aff8 1px solid;
-    border-radius: 10px;
-    padding: 1px 15px 1px 15px; 
-    box-shadow: 1px 1px 1px 1px rgb(118, 121, 121);
-    color: white;
-    opacity: 1;
-    transition: 0.3s;
-    }
-    .keskelle {
-      transition-duration: 0.4s;
-    }
-    
-    .keskelle:hover {
-      opacity: 0.6;}
- .keskelle{text-align: center;}
 
-.fa-instagram{
-  size: 2cm;
-  position: fixed; bottom: 0;
-  padding-bottom: 10%;
-  margin-left: 43%;
-  font-size: 1.1cm;
-  width: 50px;
+.keskelle {
   text-align: center;
-  text-decoration: none;
-  margin-bottom: 1%;
-  float: left;
-  
-    }
-.fa-tiktok{
-  size: 2cm;
-  position: fixed; bottom: 0;
-  padding-bottom: 10%;
-  margin-left: 52%;
-  font-size: 1cm;
-  width: 50px;
+  transition-duration: 0.4s;
+}
+
+.keskelle:hover {
+  opacity: 0.6;
+}
+
+.fa-instagram,
+.fa-tiktok {
+  font-size: 1.1cm; 
+  color: white;     
+  text-decoration: none; 
+  margin: 0 20px; 
+  transition-duration: 0.4s; 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: absolute;
+  bottom: 10px; 
+  width: 100%; 
+  padding-bottom: 20px; 
+}
+
+.social-icons a {
+  display: inline-flex; 
   text-align: center;
-  text-decoration: none;
-  margin-bottom: 1%;
-  background-size: contain;
-  float: right;
-        }
-    .fa-instagram:hover {
-      transition-duration: 0.4s;
-      opacity: 0.6;
-    }
-    .fa-tiktok:hover {
-      transition-duration: 0.4s;
-        opacity: 0.6;
-      }
-    .fa-instagram {
-  color: white;
-    }
-    .fa-tiktok {
-  color: white;
-    }
+  padding: 0; 
+}
+
+.fa-instagram:hover,
+.fa-tiktok:hover {
+  opacity: 0.6; 
+}
 
 @media (max-width: 600px) {
-  
-  
+  .fa-instagram,
+  .fa-tiktok {
+    font-size: 1cm; 
+    margin: 0 10px; 
+  }
 }
-
