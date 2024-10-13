@@ -27,7 +27,7 @@ p{
 text-shadow: 1px 1px #92aff8;
 text-decoration:none;
 }
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+
 h1{color:#ffffff;
     }
 h2{color: #92aff8; 
@@ -58,15 +58,12 @@ a:hover {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 2%;
-    border: 10%;
     border-radius: 5%;
     padding: 2%;
     
-   
-    
 }
 .fa-instagram{
-    size: 2cm;
+    
     font-size: 1.1cm;
     text-align: center;
     text-decoration: none;
@@ -76,7 +73,7 @@ a:hover {
     
       }
   .fa-tiktok{
-    size: 2cm;
+    
     font-size: 1cm;
     text-align: center;
     text-decoration: none;
